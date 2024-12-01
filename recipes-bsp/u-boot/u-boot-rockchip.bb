@@ -24,6 +24,14 @@ SRC_URI = " \
 	git://github.com/radxa/rkbin.git;protocol=https;branch=develop-v2024.10;name=rkbin;destsuffix=rkbin; \
 "
 
+SRCREV:radxa-zero-3e = "f919c3a889f0ec7d63a48b5d0ed064386b0980bd"
+SRCREV_rkbin:radxa-zero-3e = "a45caf5db84fddb3422142a77cf2b50336f11161"
+SRC_URI:radxa-zero-3e = " \
+	git://github.com/u-boot/u-boot.git;protocol=https;branch=master; \
+	git://github.com/radxa/rkbin.git;protocol=https;branch=develop-v2024.10;name=rkbin;destsuffix=rkbin; \
+"
+
+
 SRCREV_FORMAT = "default_rkbin"
 
 DEPENDS:append = " ${PYTHON_PN}-native"

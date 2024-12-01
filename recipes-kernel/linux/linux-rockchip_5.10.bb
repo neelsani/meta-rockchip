@@ -12,6 +12,13 @@ SRC_URI = " \
 	file://${THISDIR}/files/cgroups.cfg \
 "
 
+
+SRCREV:radxa-zero-3e = "2b4f7a2da60acf553b5379d76edc4a6858f15040"
+SRC_URI:radxa-zero-3e = " \
+	git://github.com/radxa/kernel.git;protocol=https;nobranch=1;branch=linux-5.10-gen-rkr8-buildroot; \
+	file://${THISDIR}/files/cgroups.cfg \
+"
+
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 
 KERNEL_VERSION_SANITY_SKIP = "1"
