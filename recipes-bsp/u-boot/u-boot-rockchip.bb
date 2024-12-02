@@ -1,6 +1,3 @@
-# Copyright (C) 2019, Fuzhou Rockchip Electronics Co., Ltd
-# Released under the MIT license (see COPYING.MIT for the terms)
-
 PATCHPATH = "${CURDIR}/u-boot-rockchip"
 inherit auto-patch
 
@@ -15,6 +12,10 @@ DEPENDS += "bc-native dtc-native"
 
 PV = "2017.09"
 
+
+
+# Copyright (C) 2019, Fuzhou Rockchip Electronics Co., Ltd
+# Released under the MIT license (see COPYING.MIT for the terms)
 LIC_FILES_CHKSUM = "file://Licenses/README;md5=a2c678cfd4a4d97135585cad908541c6"
 
 SRCREV = "3c60a711e61015c1a61247837afbeaa85bd7fbf2"
@@ -23,14 +24,6 @@ SRC_URI = " \
 	git://github.com/radxa/u-boot.git;protocol=https;branch=next-dev-buildroot; \
 	git://github.com/radxa/rkbin.git;protocol=https;branch=develop-v2024.10;name=rkbin;destsuffix=rkbin; \
 "
-
-SRCREV:radxa-zero-3e = "f919c3a889f0ec7d63a48b5d0ed064386b0980bd"
-SRCREV_rkbin:radxa-zero-3e = "a45caf5db84fddb3422142a77cf2b50336f11161"
-SRC_URI:radxa-zero-3e = " \
-	git://github.com/u-boot/u-boot.git;protocol=https;branch=master; \
-	git://github.com/radxa/rkbin.git;protocol=https;branch=develop-v2024.10;name=rkbin;destsuffix=rkbin; \
-"
-
 
 SRCREV_FORMAT = "default_rkbin"
 
